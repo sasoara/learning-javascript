@@ -30,6 +30,18 @@
         url.username = "sarahli";
         url.password = "ok";
         console.log(url.protocol, url.host, url.pathname, url.username + " : " + url.password, url.searchParams.get("param"));
+
+        /* The searchParams readonly property of the URL interface
+        returns a URLSearchParams object allowing access to the
+        GET decoded query arguments contained in the URL.
+        If the URL of my page is
+        http://*index.html?name=Sarah&age=26.1
+        the 'name' and 'age' parameters could parse out by using:*/
+        const params = (new URL(window.location)).searchParams;
+        let name = params.get('name');
+        let age = parseInt(params.get('age'));
+        console.log(name);
+        console.log(age);
     </script>
 </body>
 
