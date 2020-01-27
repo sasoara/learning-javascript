@@ -10,46 +10,56 @@
     <!-- The HTML script element is used to embed or reference * executable code *;
         this is typically used to embed or refer to JavaScript code. -->
     <script>
-        alert("Hello World!");
-
-        /* The window.location read-only property returns a Location
-        object with information about the current location of the document.
-        The Location interface represents (with a few properties) the location (URL) of
-        the object it is linked to.
-         */
-        console.log(
-            window.location,
-            window.location.hostname,
-            window.location.search,
-        );
-
-        /* The URL() constructor returns a newly created URL object
-        representing the URL defined by the parameters.
+        /* A function is a code snippet that can be called by other code
+        or by itself, or a variable that refers to the function. When a
+        function is called, arguments are passed to the function as input, and the
+        function can optionally return a value. A function in JavaScript is also an object.
         */
-        const url = new URL(window.location);
-        url.username = "sarahli";
-        url.password = "ok";
-        console.log(url.protocol, url.host, url.pathname, url.username + " : " + url.password, url.searchParams.get("param"));
+        function firstTries() {
+            alert("Hello World!");
 
-        /* The searchParams readonly property of the URL interface
-        returns a URLSearchParams object allowing access to the
-        GET decoded query arguments contained in the URL.
-        If the URL of my page is
-        http://*index.html?name=Sarah&age=26.1
-        the 'name' and 'age' parameters could parse out by using:*/
-        const params = (new URL(window.location)).searchParams;
-        let name = params.get('name');
-        let age = parseInt(params.get('age'));
-        console.log(name);
-        console.log(age);
+            /* The window.location read-only property returns a Location
+            object with information about the current location of the document.
+            The Location interface represents (with a few properties) the location (URL) of
+            the object it is linked to.
+             */
+            console.log(
+                window.location,
+                window.location.hostname,
+                window.location.search,
+            );
 
-        /* The debugger statement invokes any available debugging functionality,
-        such as setting a breakpoint. If no debugging functionality is
-        available, this statement has no effect. */
-        debugger;
-        age = age + 4;
-        debugger;
-        console.log(age);
+            /* The URL() constructor returns a newly created URL object
+            representing the URL defined by the parameters.
+            */
+            const url = new URL(window.location);
+            url.username = "sarahli";
+            url.password = "ok";
+            console.log(url.protocol, url.host, url.pathname, url.username + " : " + url.password, url.searchParams.get("param"));
+
+            /* The searchParams readonly property of the URL interface
+            returns a URLSearchParams object allowing access to the
+            GET decoded query arguments contained in the URL.
+            If the URL of my page is
+            http://*index.html?name=Sarah&age=26.1
+            the 'name' and 'age' parameters could parse out by using:*/
+            const params = (new URL(window.location)).searchParams;
+            let name = params.get('name');
+            let age = parseInt(params.get('age'));
+            console.log(name);
+            console.log(age);
+
+            /* The debugger statement invokes any available debugging functionality,
+            such as setting a breakpoint. If no debugging functionality is
+            available, this statement has no effect. */
+            debugger;
+            age = age + 4;
+            debugger;
+            console.log(age);
+        }
+        /* For the next tries/example I don't need the stuff above.
+        if I want to execute it, I'll write ‘firstTries ();’
+        */
     </script>
 </body>
 
