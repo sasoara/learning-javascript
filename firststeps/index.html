@@ -42,6 +42,14 @@
         let age = parseInt(params.get('age'));
         console.log(name);
         console.log(age);
+
+        /* The debugger statement invokes any available debugging functionality,
+        such as setting a breakpoint. If no debugging functionality is
+        available, this statement has no effect. */
+        debugger;
+        age = age + 4;
+        debugger;
+        console.log(age);
     </script>
 </body>
 
