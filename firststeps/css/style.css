@@ -1,0 +1,17 @@
+/*
+Author:         Sarah Bettinger
+Description:    This style brings pictures with the same height in two different arrangements.
+                A: The images are drawn to the width of 3 columns
+                B: All pictures get the same width.
+Version:        1.0
+*/
+
+body {
+    column-count: 3;
+    /* nothing */
+}
+
+img {
+    width: 100%;
+    /* width: 300px; */
+}
