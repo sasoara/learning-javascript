@@ -6,7 +6,7 @@ Description:    This style brings pictures with the same height in two different
 Version:        1.0
 */
 
-#img-container {
+body {
     column-count: 3;
     /* nothing */
 }
