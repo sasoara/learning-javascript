@@ -1,0 +1,19 @@
+{
+  "name": "starting-with-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --collectCoverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasoara/learning-javascript.git"
+  },
+  "author": "Sarah Bettinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasoara/learning-javascript/issues"
+  },
+  "homepage": "https://github.com/sasoara/learning-javascript#readme"
+}
