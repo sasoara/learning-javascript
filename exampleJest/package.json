@@ -1,0 +1,14 @@
+{
+  "name": "examplejest",
+  "version": "1.0.0",
+  "description": "example with magda",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --collectCoverage"
+  },
+  "author": "Sarah Bettinger",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.2.1"
+  }
+}
